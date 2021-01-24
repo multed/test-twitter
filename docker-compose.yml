@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  postgres:
+    image: postgres:12.1-alpine
+    ports:
+      - "127.0.0.1:5432:5432"
+    environment:
+      - POSTGRES_USER=shop_user
+      - POSTGRES_PASSWORD=HJ2fvf69HJ343DBCioLLdreut85768gsv57bcvqjm
+  redis:
+    image: redis:5-alpine
+    ports:
+      - "127.0.0.1:6379:6379"
